@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/alunos")
-@CrossOrigin(origins = "*") // Permite que o Angular acesse a API
+@CrossOrigin(origins = "*")
 public class AlunoController {
 
     @Autowired
@@ -24,4 +24,5 @@ public class AlunoController {
     public List<Aluno> listar() {
         return service.listarTodos();
     }
+
 }

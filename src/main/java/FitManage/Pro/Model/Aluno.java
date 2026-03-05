@@ -6,7 +6,7 @@ import java.time.LocalDate;
 
 @Entity
 @Data
-@Table(name="alunos")
+@Table(name = "alunos")
 public class Aluno {
 
     @Id
@@ -14,8 +14,13 @@ public class Aluno {
     private Long id;
     private String nome;
     private String email;
+    private String cpf;
+    private LocalDate dataNascimento;
     private LocalDate dataMatricula = LocalDate.now();
     private String status = "ATIVO";
-    private int telefone;
-
+    private String telefone;
+    private String endereco;
+    private String cidade;
+    private String estado;
+    private String cep;
 }

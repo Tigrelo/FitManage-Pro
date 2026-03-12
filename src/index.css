@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Opcional: Reset básico para garantir que o Dashboard ocupe a tela toda */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
